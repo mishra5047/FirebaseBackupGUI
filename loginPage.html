@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="nav_menu_options">
+        <div class="items">
+          <a href="./homePage.html" ><div class="title_img"> 
+            <img src="./assets/icon_firebase.png" height="35px" width="35px" class="title_img"/>
+            <div>Backup</div>
+          </div></a>
+          <div id="item_1" class="active_list_item">
+            <a href="#section_1">Login</a>
+          </div>
+          <div ><a id="item_2" href="#section_2">Process</a></div>
+          <div ><a id="item_2" href="#section_3">Results</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="display">
+      <div id="section_1" class="outer">
+        <img class="img_sec" src="./assets/login_image.svg" />
+        <div class="inner_1">
+          <div class="text1">
+            <span class="text-secondary">Login</span>
+          </div>
+          <div class="text2">
+            Enter Your Firebase Account's Email and Password.
+          </div>
+          
+          <div class="input-area">
+  
+          <div class="form-control">
+            <input id="email" type="text" required />
+            <label class="label">Email</label>
+          </div>
+  
+          <div class="form-control">
+            <input id="password" type="password" required />
+            <label>Password</label>
+          </div>
+        </div>
+          
+          <div id="takeBackup" class="btn_div">
+            <a class="btn" href="#">
+              <span>Take Backup</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="section_2">
+        <div class="outer">
+          <div>
+            <div class="text1">
+              Your <span class="text-secondary">Backup</span>
+            </div>
+            <div class="card_lay">
+              <img class="img_list" src="assets/google.png" />
+              <div id="itemBackup1" class="item_card">
+                Enter Your Firebase Account's Email and Password
+              </div>
+            </div>
+  
+            <div class="card_lay">
+              <img class="img_list" src="assets/coding.png" />
+              <div class="item_card" id="itemBackup2">Click The Login Button</div>
+            </div>
+  
+            <div class="card_lay">
+              <img class="img_list" src="assets/time-left.png" />
+              <div class="item_card" id="itemBackup3">Wait until the script finishes</div>
+            </div>
+  
+            <div class="card_lay">
+              <img class="img_list" src="assets/folder.png" />
+              <div class="item_card" id="itemBackup4">Download The Backup</div>
+            </div>
+          </div>
+
+          <img class="img_sec" src="assets/image_history.png" />
+        </div>
+        </div>
+  </body>
+  <script src="script_login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
