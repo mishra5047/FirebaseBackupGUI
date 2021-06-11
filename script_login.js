@@ -121,7 +121,6 @@ async function getBackup() {
   let email = emailId.value;
   let pass = password.value;
 
-  // testemail5047  Test@1234
   let value = await axios.post(
     "http://localhost:3000/api/getResult",
     {
@@ -230,19 +229,16 @@ function updateProgressBar(current, total) {
 function addDivOnResult(result) {
   if (result == 200) {
     console.log("entered email err");
-    editLocalStorage("Invalid Credentials");
     addEmailErrorDiv();
     flagBoolean = false;
   } else if (result == 201) {
-    editLocalStorage("Invalid Credentials");
     addEmailErrorDiv();
+    console.log("entered email err");
     flagBoolean = false;
   } else if (result == 202) {
-    editLocalStorage("No Projects Found");
     addNoProjectError();
     flagBoolean = false;
   } else if (result == 100) {
-    editLocalStorage("Backup Successful");
     addCompleteDiv();
   }
 }

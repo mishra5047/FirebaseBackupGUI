@@ -15,10 +15,8 @@ function createWindow(){
       })
 
       mainWindow.loadFile("./homePage.html").then( function(){
-          mainWindow.webContents.openDevTools();
           mainWindow.removeMenu(); //open dev tools
           mainWindow.maximize();
-        //   mainWindow.removeMenu();
       });
 }
 
