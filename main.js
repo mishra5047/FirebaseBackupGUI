@@ -14,7 +14,7 @@ function createWindow(){
           }
       })
 
-      mainWindow.loadFile("./homePage.html").then( function(){
+      mainWindow.loadFile("./index.html").then( function(){
           mainWindow.removeMenu(); //open dev tools
           mainWindow.maximize();
       });

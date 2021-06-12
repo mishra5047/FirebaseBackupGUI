@@ -1,114 +1,104 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img src="https://miro.medium.com/max/770/1*HFlYgB6gVLc4Su9HsB9MZg.png" alt="Project logo"></a>
 </p>
-
-<h3 align="center">FirebaseBackup_API</h3>
+<h3 align="center">Firebase Realtime Database Backup Taker</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+![GitHub Repo stars](https://img.shields.io/github/stars/mishra5047/FirebaseBackup?style=social)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/mishra5047/FirebaseBackup)
+![GitHub forks](https://img.shields.io/github/forks/mishra5047/FirebaseBackup?style=social)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> .
     <br> 
 </p>
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
+- [Problem Statement](#problem_statement)
+- [Dependencies / Limitations](#limitations)
+- [Project Structure](#structure)
+- [Future Scope](#future_scope)
+- [Setting up a local environment](#getting_started)
 - [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Technology Stack](#tech_stack)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [ScreenShots](#screenshots)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Problem Statement <a name = "problem_statement"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+For a firebase user that uses the free plan for any project. The user has no option to automatically take backup of the realtime database at a specific interval.
+
+- IDEAL: I came up with the solution to run this script in order to take the backup of all the projects existing in the user's firebase console.
+- *Note*: This is not a way to avoid the paid plan of firebase, it's just an alternative to help students to backup their project's important data.
+
+## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
+
+- The user must have an valid google account in order to login to firebase.
+- There should be at least one project existing in his / her Firebase Console.
+- In case the user has a project that doesn't have a realtime database in this case the script will just notify the user after the completion.
+
+## Package Dependencies -
+- Cli-progress [https://www.npmjs.com/package/cli-progress]
+- Node-Emoji [https://www.npmjs.com/package/node-emoji]
+- OS [https://www.npmjs.com/package/os]
+- FS [https://www.npmjs.com/package/fs]
+- Puppeteer [https://www.npmjs.com/package/puppeteer]
+- Cli Table [https://www.npmjs.com/package/cli-table]
+- Colors [https://www.npmjs.com/package/colors]
+- Express[https://expressjs.com/]
+
+## 📁 Project Structure <a name="structure"></a>
+
+- 💻 main.js -> Main script for electron application.
+- 💻 app.js -> The server file.
+- 💻 startApi.js -> Script for starting the Server.
+- 💻 script.html -> Script for the Home Page.
+- 💻 index.html -> The Home Page
+- 💻 loginPage.html -> The Login Page
+- 💻 script.js -> Script for the Home Page.
+- 💻 script_login.js -> Script for the Login Page.
+- 📁 Util -> Contains the utility scrips like validation and display functions.
+
+## 🚀 Future Scope <a name = "future_scope"></a>
+
+Right now this script is only capable of taking backup of firebase realtime database. It can be expanded to other services as well.
+
+The local folder of backup can be uploaded to google drive of the user using Google Drive API. 
+
+If you thing any other improvements can be done, raise an issue under the issues tab and i'll work on it.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
+No Prerequisites
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+No need to install anything, just download the setup for your machine and explore the same.
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Just run the app in any machine, and meanwhile the script runs - grab a cup of coffee.
 
-## 🚀 Deployment <a name = "deployment"></a>
+```
+Download Your Zip and you are good to go
+```
+## ⛏️ Built With <a name = "tech_stack"></a>
 
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+- [Firebase](https://console.firebase.google.com/) - Database
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Express](https://expressjs.com/) - API
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@AbhishekMishra](https://github.com/mishra5047)
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+## 🏁 Screenshots <a name="screenshots"></a> 
