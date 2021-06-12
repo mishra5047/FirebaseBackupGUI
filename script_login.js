@@ -247,6 +247,7 @@ function addCompleteDiv() {
   var value = [];
 
   setTimeout(async () => {
+    console.log("running get data from API");
     value = await axios.post(
       "http://localhost:3000/api/getData",
       {}
@@ -254,7 +255,7 @@ function addCompleteDiv() {
     value = value.data;
 
     generateKnowMoreDiv(value["success"], value["failure"]);
-  }, 18000);
+  }, 5000);
 }
 
 async function generateKnowMoreDiv(successList, failureList) {

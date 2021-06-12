@@ -8,14 +8,12 @@ function createWindow(){
     const mainWindow = new BrowserWindow({
         webPreferences: {
             nodeIntegration:true,
-            devTools: false,
             icon: './assets/icon_db.ico',
             //enable node in this app
           }
       })
 
       mainWindow.loadFile("./index.html").then( function(){
-          mainWindow.removeMenu(); //open dev tools
           mainWindow.maximize();
       });
 }

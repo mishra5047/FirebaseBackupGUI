@@ -41,8 +41,6 @@ app.post('/api/getData', async function (req, res){
 app.get('/api/getZipPath', async function (req, res){
   console.log(path);
   res.download(path);
-
-  // set timout lagado 2 min ka then delete
 })
 
 app.get('/api/deleteZip', async function (req, res){

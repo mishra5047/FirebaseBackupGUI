@@ -314,6 +314,7 @@ async function checkIfDone() {
 
 // * function to sort projects based on their id's
 async function sortBackups(projectIds) {
+
   utilJs.createDir(store);
   for (let i = 0; i < projectIds.length; i++) {
     let projectName = projectIds[i].split("-")[0];
@@ -354,5 +355,3 @@ async function findProject(projectName) {
     }
   });
 }
-
-// * child processes in js.
