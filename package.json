@@ -9,7 +9,6 @@
     "cli-table": "^0.3.6",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
-    "electron": "^13.1.2",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "node-emoji": "^1.10.0",
@@ -18,11 +17,13 @@
     "zip-dir": "^2.0.0"
   },
   "devDependencies": {
-    "electron-packager": "^15.2.0"
+    "electron-packager": "^15.2.0",
+    "electron": "^13.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager ."
   },
   "keywords": [],
   "author": "",
